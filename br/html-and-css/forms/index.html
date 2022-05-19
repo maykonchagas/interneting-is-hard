@@ -529,15 +529,15 @@
 </code></pre>
 
           <p>
-            First, we have a container <code>&lt;div&gt;</code> to help with
-            styling. This is pretty common for separating input elements.
-            Second, we have a <code>&lt;label&gt;</code>, which you can think of
-            as another
-            <a href="../semantic-html/index.html">semantic HTML element</a>,
-            like <code>&lt;article&gt;</code> or
-            <code>&lt;figcaption&gt;</code>, but for form labels. A label’s
-            <code>for</code> attribute must match the <code>id</code> attribute
-            of its associated <code>&lt;input/&gt;</code> element.
+            Primeiro, nós temos um contêiner <code>&lt;div&gt;</code> para 
+            ajudar com a estilização. Isso é muito comum para separar 
+            elementos de entrada de dados. Segundo, nós temos uma
+            <code>&lt;label&gt;</code>, que você pode pensar nela como outro
+            <a href="../semantic-html/index.html">elemento semântico da HTML</a>,
+            como <code>&lt;article&gt;</code> ou <code>&lt;figcaption&gt;</code>,
+            mas para rótulos. Um rótulo com o atributo <code>for</code> deve
+            casar com o atributo <code>id</code> associado ao elemento 
+            <code>&lt;input/&gt;</code> definido.
           </p>
 
           <figure class="diagram">
@@ -558,16 +558,17 @@
           </figure>
 
           <p>
-            Third, the <code>&lt;input/&gt;</code> element creates a text field.
-            It’s a little different from other elements we’ve encountered
-            because it can dramatically change appearance depending on its
-            <code>type</code> attribute, but it always creates some kind of
-            interactive user input. We’ll see other values besides
-            <code>text</code> throughout the chapter. Remember that
+            E por fim, o elemento <code>&lt;input/&gt;</code> cria um campo
+            de texto. Isso é um pouco diferente de outros elementos que 
+            aprendemos até o momento, porque ele pode mudar drasticamente a
+            aparência dependendo do atributo <code>type</code>, mas ele sempre
+            cria algum tipo de interatividade na entrada do usuário. Nós vamos
+            ver outros valores além do <code>text</code> no decorrer do 
+            capítulo. Lembre-se que 
             <a href="../css-selectors/index.html#id-selectors"
-              >ID selectors are bad</a
-            >&mdash;the <code>id</code> attribute here is <em>only</em> for
-            connecting it to a <code>&lt;label&gt;</code> element.
+              >seletores ID selectors são ruins</a
+            >&mdash;o atributo <code>id</code> aqui é utilizado <em>somente</em>
+            para referenciar o elemento <code>&lt;label&gt;</code>.
           </p>
 
           <figure class="diagram">
@@ -588,18 +589,17 @@
           </figure>
 
           <p>
-            Conceptually, an <code>&lt;input/&gt;</code> element represents a
-            “variable” that gets sent to the backend server. The
-            <code>name</code> attribute defines the name of this variable, and
-            the value is whatever the user entered into the text field. Note
-            that you can pre-populate this value by adding a
-            <code>value</code> attribute to an
-            <code>&lt;input/&gt;</code> element.
+            Conceitualmente, um elemento <code>&lt;input/&gt;</code> representa
+            uma “variável” que é enviada para o servidor. O atributo 
+            <code>name</code> define o nome dessa variável, e o valor é qualquer
+            coisa que o usuário inseriu dentro do campo de texto. Note que você
+            pode pré-popular esse valor adicionando um atributo <code>value</code>
+            a um elemento <code>&lt;input/&gt;</code>.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="styling-text-input-fields">
-              Styling Text Input Fields
+              Estilizando campos de entrada de texto
             </h3>
           </div>
 
