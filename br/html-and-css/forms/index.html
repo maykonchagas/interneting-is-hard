@@ -604,14 +604,15 @@
           </div>
 
           <p>
-            An <code>&lt;input/&gt;</code> element can be styled like any other
-            HTML element. Let’s add some CSS to <code>styles.css</code> to
-            pretty it up a bit. This makes use of all the concepts from the
-            <a href="../hello-css/index.html">Hello, CSS</a>,
+            Um elemento <code>&lt;input/&gt;</code> pode ser estilizado como
+            qualquer outro elemento HTML. Vamos adicionar algumas regras CSS
+            ao nosso <code>styles.css</code> para embelezar um pouco o 
+            formulário. Aqui vamos utilizar todos os conceitos aprendidos nos
+            capítulos <a href="../hello-css/index.html">Olá, CSS</a>,
             <a href="https://internetingishard.com/html-and-css/css-box-model"
-              >Box Model</a
-            >, <a href="../css-selectors/index.html">CSS Selectors</a>, and
-            <a href="../flexbox/index.html">Flexbox</a> chapters:
+              >Modelo de Caixa</a
+            >, <a href="../css-selectors/index.html">Seletores CSS</a>, e
+            <a href="../flexbox/index.html">Flexbox</a>:
           </p>
 
           <pre
@@ -639,14 +640,14 @@
 </code></pre>
 
           <p>
-            The <code>input[type='text']</code> part is a new type of CSS
-            selector called an “attribute selector”. It only matches
-            <code>&lt;input/&gt;</code> elements that have a
-            <code>type</code> attribute equal to <code>text</code>. This lets us
-            specifically target text fields opposed to radio buttons, which are
-            defined by the same HTML element
-            (<code>&lt;input&nbsp;type='radio'/&gt;</code>). You can read more
-            about attribute selectors at
+            A parte do código <code>input[type='text']</code> é um novo tipo
+            de seletor CSS chamado “seletor de atributo”. Ele só combina com
+            elementos <code>&lt;input/&gt;</code> que tem um atributo
+            <code>type</code> igual ao <code>text</code>. Isso permite que 
+            a gente selecione especificamente campos de texto, ao contrário
+            de botões radio, que são definidos pelo mesmo elemento HTML
+            (<code>&lt;input&nbsp;type='radio'/&gt;</code>). Você pode ler
+            mais sobre seletores de atributos na 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
               >Mozilla Developer Network</a
@@ -654,24 +655,24 @@
           </p>
 
           <p>
-            All of our styles are “namespaced” in a <code>.form-row</code>
+            Toda nossa estilização está com uma identificação 
+            (<em>“namespaced”</em>) em um 
             <a href="../css-selectors/index.html#descendant-selectors"
-              >descendant selector</a
-            >. Isolating <code>&lt;input/&gt;</code> and
-            <code>&lt;label&gt;</code> styles like this makes it easier to
-            create different kinds of forms. We’ll see why it’s convenient to
-            avoid global <code>input[type='text']</code> and
-            <code>label</code> selectors once we get to
-            <a href="index.html#radio-buttons">radio buttons</a>.
+              >seletor descendente</a
+            > chamado <code>.form-row</code>. Isolando o 
+            <code>&lt;input/&gt;</code> e o <code>&lt;label&gt;</code> dessa
+            forma torna mais fácil criar diferentes tipos de formulários. 
+            Veremos por que é conveniente evitar seletores globais como
+            <code>input[type='text']</code> e <code>label</code> quando
+            formos utilizar <a href="index.html#radio-buttons">botões radio</a>.
           </p>
 
           <p>
-            Finally, let’s tweak these base styles to create our desktop layout.
-            Add the following
+            E finalmente, vamos hackear esse estilo base agora para criar 
+            nosso layout para desktop. Adicione a seguinte 
             <a href="../responsive-design/index.html#css-media-queries"
               >media query</a
-            >
-            to the end of our stylesheet.
+            > ao final da nossa folha de estilo.
           </p>
 
           <pre
@@ -683,7 +684,7 @@
   }
   <span class="hljs-selector-class">.form-row</span> {
     <span class="hljs-attribute">flex-direction</span>: row;
-    <span class="hljs-attribute">align-items</span>: flex-start; <span class="hljs-comment">/* To avoid stretching */</span>
+    <span class="hljs-attribute">align-items</span>: flex-start; <span class="hljs-comment">/* Para evitar que ele expanda verticalmente */</span>
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
   }
   <span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type='text']</span> {
@@ -700,13 +701,13 @@
 </code></pre>
 
           <p>
-            Check out that awesome use of the
+            Veja só essa uso incrível da propriedade 
             <a href="../flexbox/index.html#flex-container-direction"
-              ><code>flex-direction</code> property</a
-            >
-            to make the <code>&lt;label&gt;</code> appear on top of its
-            <code>&lt;input/&gt;</code> element in the mobile layout, but to the
-            left of it in the desktop layout.
+              ><code>flex-direction</code></a> e como utilizamos ela
+            para fazer o <code>&lt;label&gt;</code> aparecer em cima do
+            seu elemento <code>&lt;input/&gt;</code> no layout para 
+            dispositivos móveis, mas ficar a esquerda dele no layout para
+            desktop.
           </p>
 
           <figure class="diagram">
@@ -732,7 +733,7 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="email-input-fields">
-              <span>Email Input Fields</span>
+              <span>Campo de entrada de E-mail</span>
             </h2>
           </div>
 
